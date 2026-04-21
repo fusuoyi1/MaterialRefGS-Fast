@@ -1,0 +1,4 @@
+# ninja log v5
+1	5068	1776228737516629170	/home/shiqingaoxue/文档/3DGS/MaterialRefGS/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/simple_knn.o	f2018d92a49b1d7
+0	8197	1776228740645840991	/home/shiqingaoxue/文档/3DGS/MaterialRefGS/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/ext.o	b87202846bc9964e
+1	22050	1776228754498780283	/home/shiqingaoxue/文档/3DGS/MaterialRefGS/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/spatial.o	4cea69cbbfa7ca55

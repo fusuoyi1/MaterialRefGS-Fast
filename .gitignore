@@ -1,0 +1,20 @@
+# 超大文件（必须忽略！）
+datasets/
+output_glossy/
+output_data10_2/
+
+# 缓存与日志
+__pycache__/
+*.pyc
+*.pyo
+*.pth
+*.pt
+*.bin
+*.ply
+*.onnx
+debug/
+log/
+
+# 系统文件
+.DS_Storeoutput*
+output*/*
