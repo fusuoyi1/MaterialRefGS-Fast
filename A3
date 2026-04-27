@@ -1,0 +1,407 @@
+(MaterialRefGS) shiqingaoxue@shiqingaoxue-MS-7E34:~/文档/3DGS/MaterialRefGS$ bash ./run_glossy.sh
+bash: /home/shiqingaoxue/anaconda3/envs/MaterialRefGS/lib/libtinfo.so.6: no version information available (required by bash)
+running on gpu 0
+Optimizing /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot_A3/teapot
+Output folder: /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot_A3/teapot
+Visualization folder: /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot_A3/teapot/visualize
+Tensorboard not available: not logging progress
+/home/shiqingaoxue/文档/3DGS/MaterialRefGS/datasets/GlossySynthetic/teapot
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+computing nearest_id
+Number of points at initialisation :  100000
+Using /home/shiqingaoxue/.cache/torch_extensions/py310_cu117 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/shiqingaoxue/.cache/torch_extensions/py310_cu117/renderutils_plugin/build.ninja...
+Building extension module renderutils_plugin...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module renderutils_plugin...
+Training progress:   0%|                                                                                                                                                                         | 0/50001 [00:00<?, ?it/s]Propagation until: 30000
+Densify until: 30000
+Total iterations: 50001
+========== EXPERIMENT CONFIG ==========
+TAG: A3
+PRINT_COMPARE_INTERVAL: 1000
+TEST_INTERVAL: 2500
+VISUAL_INTERVAL: 2000
+MESH_EXTRACT_INTERVAL: 8000
+WARP_START: 25000
+WARP_INTERVAL_STAGE1: 2
+WARP_INTERVAL_STAGE2: 4
+PSNR display source: cached formal evaluation
+Densify schedule: adaptive interval + adaptive grad threshold
+=======================================
+Loading Normal Maps...
+Loading Mask Maps...
+/home/shiqingaoxue/文档/3DGS/MaterialRefGS/datasets/GlossySynthetic/teapot/rgb
+Finised Loading Prior Maps!!!
+Training progress:   2%| | 1000/50001 [00:24<10:30, 77.71it/s, Loss=0.05125, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=10258, Ref=0.0000, PSNR-train=19.3474, PSNR-test=0.0000]
+[COMPARE][A3][ITER 1000] avg_iter_ms=18.68 | points=10258 | delta_points=+10258 | psnr_train=19.3474 | psnr_test=0.0000 | loss=0.05125 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=4 | prune_only_calls=0 | densify_interval=100 | densify_grad=0.000200
+Training progress:   4%| | 2000/50001 [00:38<23:09, 34.55it/s, Loss=0.05369, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=31889, Ref=0.0000, PSNR-train=19.0506, PSNR-test=0.0000]
+[COMPARE][A3][ITER 2000] avg_iter_ms=12.78 | points=31889 | delta_points=+21631 | psnr_train=19.0506 | psnr_test=0.0000 | loss=0.05369 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=10 | prune_only_calls=0 | densify_interval=100 | densify_grad=0.000200
+Training progress:   6%| | 3000/50001 [00:54<16:26, 47.63it/s, Loss=0.04511, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=51520, Ref=0.0000, PSNR-train=20.0887, PSNR-test=0.0000]
+[COMPARE][A3][ITER 3000] avg_iter_ms=14.59 | points=51520 | delta_points=+19631 | psnr_train=20.0887 | psnr_test=0.0000 | loss=0.04511 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=10 | prune_only_calls=0 | densify_interval=100 | densify_grad=0.000200
+/home/shiqingaoxue/anaconda3/envs/MaterialRefGS/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Training progress:   8%| | 4000/50001 [01:30<40:11, 19.08it/s, Loss=0.03743, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=32873, Ref=89.0518, PSNR-train=22.3301, PSNR-test=0.0000
+[COMPARE][A3][ITER 4000] avg_iter_ms=32.85 | points=32873 | delta_points=-18647 | psnr_train=22.3301 | psnr_test=0.0000 | loss=0.03743 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  10%| | 5000/50001 [02:01<24:23, 30.76it/s, Loss=0.02438, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=38100, Ref=91.1102, PSNR-train=24.9524, PSNR-test=0.0000
+[COMPARE][A3][ITER 5000] avg_iter_ms=29.60 | points=38100 | delta_points=+5227 | psnr_train=24.9524 | psnr_test=0.0000 | loss=0.02438 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  12%| | 6000/50001 [02:34<40:21, 18.17it/s, Loss=0.02185, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=47568, Ref=92.4151, PSNR-train=25.7495, PSNR-test=0.0000
+[COMPARE][A3][ITER 6000] avg_iter_ms=30.52 | points=47568 | delta_points=+9468 | psnr_train=25.7495 | psnr_test=0.0000 | loss=0.02185 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  14%|▏| 7000/50001 [03:09<28:02, 25.56it/s, Loss=0.02224, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=40317, Ref=95.1385, PSNR-train=25.5249, PSNR-test=25.117
+[COMPARE][A3][ITER 7000] avg_iter_ms=32.94 | points=40317 | delta_points=-7251 | psnr_train=25.5249 | psnr_test=25.1170 | loss=0.02224 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 187.16it/s]
+ 59%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                         | 19/32 [00:00<00:00, 183.57it/s]
+[ITER 7000] Evaluating test: L1 0.014076800231123343 PSNR 25.11698204278946
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 167.03it/s]
+  0%|                                                                                                                                                                                                | 0/5 [00:00<?, ?it/s]
+[ITER 7000] Evaluating train: L1 0.01245965212583542 PSNR 25.820037078857425
+Training progress:  16%|▏| 8000/50001 [03:42<35:32, 19.70it/s, Loss=0.01798, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=51318, Ref=94.9024, PSNR-train=26.6959, PSNR-test=25.117
+[COMPARE][A3][ITER 8000] avg_iter_ms=30.80 | points=51318 | delta_points=+11001 | psnr_train=26.6959 | psnr_test=25.1170 | loss=0.01798 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  18%|▏| 9000/50001 [04:16<26:39, 25.64it/s, Loss=0.01793, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=63457, Ref=94.6767, PSNR-train=26.6481, PSNR-test=25.117
+[COMPARE][A3][ITER 9000] avg_iter_ms=32.02 | points=63457 | delta_points=+12139 | psnr_train=26.6481 | psnr_test=25.1170 | loss=0.01793 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  20%|▏| 10000/50001 [04:53<37:59, 17.55it/s, Loss=0.01820, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=58870, Ref=95.2539, PSNR-train=26.9700, PSNR-test=26.01
+[COMPARE][A3][ITER 10000] avg_iter_ms=34.67 | points=58870 | delta_points=-4587 | psnr_train=26.9700 | psnr_test=26.0186 | loss=0.01820 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 180.80it/s]
+ 56%|█████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                               | 18/32 [00:00<00:00, 174.71it/s]
+[ITER 10000] Evaluating test: L1 0.012160314508946612 PSNR 26.01863133907318
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 194.27it/s]
+  0%|                                                                                                                                                                                                | 0/5 [00:00<?, ?it/s]
+[ITER 10000] Evaluating train: L1 0.010126530937850476 PSNR 27.06590957641602
+
+[ITER 10000] Saving Gaussians
+
+[ITER 10000] Saving Checkpoint
+Training progress:  22%|▏| 11000/50001 [05:29<23:00, 28.25it/s, Loss=0.01669, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=70274, Ref=94.8928, PSNR-train=27.1751, PSNR-test=26.01
+[COMPARE][A3][ITER 11000] avg_iter_ms=32.42 | points=70274 | delta_points=+11404 | psnr_train=27.1751 | psnr_test=26.0186 | loss=0.01669 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  24%|▏| 12000/50001 [06:05<36:48, 17.21it/s, Loss=0.01609, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=82277, Ref=94.7482, PSNR-train=27.6426, PSNR-test=26.01
+[COMPARE][A3][ITER 12000] avg_iter_ms=33.82 | points=82277 | delta_points=+12003 | psnr_train=27.6426 | psnr_test=26.0186 | loss=0.01609 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+
+[ITER 12000] Saving Checkpoint
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 177.39it/s]
+ 56%|█████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                               | 18/32 [00:00<00:00, 177.12it/s]
+[ITER 12500] Evaluating test: L1 0.011832514050183818 PSNR 26.19399321079254
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 170.08it/s]
+  0%|                                                                                                                                                                                                | 0/5 [00:00<?, ?it/s]
+[ITER 12500] Evaluating train: L1 0.00948082935065031 PSNR 27.47647171020508
+Training progress:  26%|▎| 13000/50001 [06:44<23:14, 26.54it/s, Loss=0.01718, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=72584, Ref=95.0747, PSNR-train=27.2592, PSNR-test=26.19
+[COMPARE][A3][ITER 13000] avg_iter_ms=36.61 | points=72584 | delta_points=-9693 | psnr_train=27.2592 | psnr_test=26.1940 | loss=0.01718 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  28%|▎| 14000/50001 [07:21<33:33, 17.88it/s, Loss=0.01618, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=83715, Ref=94.7954, PSNR-train=27.2126, PSNR-test=26.19
+[COMPARE][A3][ITER 14000] avg_iter_ms=34.61 | points=83715 | delta_points=+11131 | psnr_train=27.2126 | psnr_test=26.1940 | loss=0.01618 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  30%|▎| 15000/50001 [08:01<28:35, 20.40it/s, Loss=0.01546, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=95060, Ref=94.6213, PSNR-train=27.5778, PSNR-test=26.11
+[COMPARE][A3][ITER 15000] avg_iter_ms=36.97 | points=95060 | delta_points=+11345 | psnr_train=27.5778 | psnr_test=26.1145 | loss=0.01546 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 178.31it/s]
+ 56%|██████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                   | 18/32 [00:00<00:00, 176.77it/s]
+[ITER 15000] Evaluating test: L1 0.011946784856263548 PSNR 26.114507794380188
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 165.43it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 15000] Evaluating train: L1 0.009321272931993007 PSNR 27.687626266479494
+
+[ITER 15000] Saving Gaussians
+
+[ITER 15000] Saving Checkpoint
+Training progress:  32%|▎| 16000/50001 [08:44<32:04, 17.66it/s, Loss=0.01598, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=81576, Ref=94.9176, PSNR-train=27.5527, PSNR-test=26.11
+[COMPARE][A3][ITER 16000] avg_iter_ms=39.14 | points=81576 | delta_points=-13484 | psnr_train=27.5527 | psnr_test=26.1145 | loss=0.01598 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  34%|▎| 17000/50001 [09:22<21:23, 25.71it/s, Loss=0.01618, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=92045, Ref=94.6146, PSNR-train=27.5329, PSNR-test=26.11
+[COMPARE][A3][ITER 17000] avg_iter_ms=36.13 | points=92045 | delta_points=+10469 | psnr_train=27.5329 | psnr_test=26.1145 | loss=0.01618 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 177.23it/s]
+ 59%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                             | 19/32 [00:00<00:00, 180.87it/s]
+[ITER 17500] Evaluating test: L1 0.012225452053826302 PSNR 25.96783435344696
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 166.46it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 17500] Evaluating train: L1 0.00913850348442793 PSNR 27.81321067810059
+Training progress:  36%|▎| 18000/50001 [10:03<32:52, 16.22it/s, Loss=0.01469, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=102287, Ref=94.4714, PSNR-train=27.9050, PSNR-test=25.9
+[COMPARE][A3][ITER 18000] avg_iter_ms=37.50 | points=102287 | delta_points=+10242 | psnr_train=27.9050 | psnr_test=25.9678 | loss=0.01469 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  38%|▍| 19000/50001 [10:44<19:57, 25.89it/s, Loss=0.01413, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=85416, Ref=94.4659, PSNR-train=28.0946, PSNR-test=25.96
+[COMPARE][A3][ITER 19000] avg_iter_ms=39.58 | points=85416 | delta_points=-16871 | psnr_train=28.0946 | psnr_test=25.9678 | loss=0.01413 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  40%|▍| 19990/50001 [11:21<19:41, 25.39it/s, Loss=0.01510, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=95197, Ref=94.2004, PSNR-train=27.8731, PSNR-test=25.96Env Gaussian Initialization...
+Training progress:  40%|▍| 20000/50001 [11:22<31:01, 16.12it/s, Loss=0.01417, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=95197, Ref=94.1941, PSNR-train=28.2376, PSNR-test=26.05
+[COMPARE][A3][ITER 20000] avg_iter_ms=35.38 | points=95197 | delta_points=+9781 | psnr_train=28.2376 | psnr_test=26.0550 | loss=0.01417 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 173.78it/s]
+ 56%|██████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                   | 18/32 [00:00<00:00, 176.69it/s]
+[ITER 20000] Evaluating test: L1 0.0120314825035166 PSNR 26.055044293403625
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 171.63it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 20000] Evaluating train: L1 0.008747478015720844 PSNR 28.06929626464844
+
+[ITER 20000] Saving Gaussians
+reconstruct radiance fields: 96it [00:01, 66.49it/s]
+The estimated bounding radius is 3.00:01, 65.49it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:01, 76.37it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=1140
+num vertices raw 180677
+num vertices post 173561
+[ITER 20000] Mesh exported to /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot_A3/teapot/test_020000.ply
+valid untile here
+336606 336606
+Finish Building FaceIds Mapping
+
+[ITER 20000] Saving Checkpoint
+Training progress:  42%|▍| 21000/50001 [12:53<48:19, 10.00it/s, Loss=0.01517, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=103995, Ref=93.9151, PSNR-train=27.8453, PSNR-test=26.0
+[COMPARE][A3][ITER 21000] avg_iter_ms=82.61 | points=103995 | delta_points=+8798 | psnr_train=27.8453 | psnr_test=26.0550 | loss=0.01517 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  44%|▍| 22000/50001 [14:28<52:13,  8.94it/s, Loss=0.01319, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=85786, Ref=94.4362, PSNR-train=28.7516, PSNR-test=26.05
+[COMPARE][A3][ITER 22000] avg_iter_ms=90.81 | points=85786 | delta_points=-18209 | psnr_train=28.7516 | psnr_test=26.0550 | loss=0.01319 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 37.04it/s]
+ 88%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                       | 28/32 [00:00<00:00, 36.95it/s]
+[ITER 22500] Evaluating test: L1 0.011665084952255711 PSNR 26.38165444135666
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 42.32it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 42.42it/s]
+[ITER 22500] Evaluating train: L1 0.008422702923417092 PSNR 28.555589294433595
+Training progress:  46%|▍| 23000/50001 [16:01<42:31, 10.58it/s, Loss=0.01393, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=94112, Ref=94.1336, PSNR-train=28.6779, PSNR-test=26.38
+[COMPARE][A3][ITER 23000] avg_iter_ms=88.08 | points=94112 | delta_points=+8326 | psnr_train=28.6779 | psnr_test=26.3817 | loss=0.01393 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  48%|▍| 24000/50001 [17:33<50:29,  8.58it/s, Loss=0.01287, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=101794, Ref=93.9623, PSNR-train=29.0190, PSNR-test=26.3
+[COMPARE][A3][ITER 24000] avg_iter_ms=88.15 | points=101794 | delta_points=+7682 | psnr_train=29.0190 | psnr_test=26.3817 | loss=0.01287 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  50%|▍| 25000/50001 [19:06<44:27,  9.37it/s, Loss=0.01230, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=84695, Ref=94.0504, PSNR-train=29.2865, PSNR-test=26.70
+[COMPARE][A3][ITER 25000] avg_iter_ms=89.74 | points=84695 | delta_points=-17099 | psnr_train=29.2865 | psnr_test=26.7028 | loss=0.01230 | geo=0.00000 | pho=0.00000 | bc=0.00000 | mw=0.00000 | rw=0.00000 | warp_calls=0 | warp_skips=1000 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 50.00it/s]
+ 88%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                       | 28/32 [00:00<00:00, 50.87it/s]
+[ITER 25000] Evaluating test: L1 0.01115579268662259 PSNR 26.702760815620422
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 51.38it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 25000] Evaluating train: L1 0.008175889309495688 PSNR 28.856320190429688
+Training progress:  51%|▌| 25420/50001 [19:52<44:20,  9.24it/s, Loss=0.01307, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00042, MW=0.00000, RW=0.00000, Points=87174, Ref=93.9592, PSNR-train=28.8594, PSNR-test=26.70
+Training progress:  52%|▌| 26000/50001 [20:55<51:54,  7.71it/s, Loss=0.01405, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00042, MW=0.00000, RW=0.00000, Points=92812, Ref=93.9577, PSNR-train=28.5683, PSNR-test=26.70
+[COMPARE][A3][ITER 26000] avg_iter_ms=104.28 | points=92812 | delta_points=+8117 | psnr_train=28.5683 | psnr_test=26.7028 | loss=0.01405 | geo=0.00000 | pho=0.00000 | bc=0.00042 | mw=0.00000 | rw=0.00000 | warp_calls=500 | warp_skips=500 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  54%|▌| 27000/50001 [22:43<44:21,  8.64it/s, Loss=0.01316, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00051, MW=0.00000, RW=0.00000, Points=100131, Ref=93.8940, PSNR-train=29.0272, PSNR-test=26.7
+[COMPARE][A3][ITER 27000] avg_iter_ms=104.74 | points=100131 | delta_points=+7319 | psnr_train=29.0272 | psnr_test=26.7028 | loss=0.01316 | geo=0.00000 | pho=0.00000 | bc=0.00051 | mw=0.00000 | rw=0.00000 | warp_calls=500 | warp_skips=500 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 53.58it/s]
+ 94%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████            | 30/32 [00:00<00:00, 54.46it/s]
+[ITER 27500] Evaluating test: L1 0.011344715458108112 PSNR 26.619087755680084
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 52.75it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 27500] Evaluating train: L1 0.007994940970093012 PSNR 28.992671966552734
+Training progress:  56%|▌| 28000/50001 [24:34<46:51,  7.83it/s, Loss=0.01273, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00042, MW=0.00000, RW=0.00000, Points=82551, Ref=93.9565, PSNR-train=29.1793, PSNR-test=26.61
+[COMPARE][A3][ITER 28000] avg_iter_ms=106.02 | points=82551 | delta_points=-17580 | psnr_train=29.1793 | psnr_test=26.6191 | loss=0.01273 | geo=0.00000 | pho=0.00000 | bc=0.00042 | mw=0.00000 | rw=0.00000 | warp_calls=500 | warp_skips=500 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  58%|▌| 29000/50001 [26:16<36:25,  9.61it/s, Loss=0.01242, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00047, MW=0.00000, RW=0.00000, Points=90434, Ref=93.8220, PSNR-train=29.0193, PSNR-test=26.61
+[COMPARE][A3][ITER 29000] avg_iter_ms=98.93 | points=90434 | delta_points=+7883 | psnr_train=29.0193 | psnr_test=26.6191 | loss=0.01242 | geo=0.00000 | pho=0.00000 | bc=0.00047 | mw=0.00000 | rw=0.00000 | warp_calls=500 | warp_skips=500 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  60%|▌| 30000/50001 [28:02<49:49,  6.69it/s, Loss=0.01208, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00050, MW=0.00000, RW=0.00000, Points=97113, Ref=93.7763, PSNR-train=29.4278, PSNR-test=26.51
+[COMPARE][A3][ITER 30000] avg_iter_ms=102.25 | points=97113 | delta_points=+6679 | psnr_train=29.4278 | psnr_test=26.5169 | loss=0.01208 | geo=0.00000 | pho=0.00000 | bc=0.00050 | mw=0.00000 | rw=0.00000 | warp_calls=500 | warp_skips=500 | densify_calls=2 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 52.06it/s]
+ 94%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████            | 30/32 [00:00<00:00, 51.81it/s]
+[ITER 30000] Evaluating test: L1 0.011415207292884588 PSNR 26.516915261745453
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 51.23it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 30000] Evaluating train: L1 0.007754160277545452 PSNR 29.22363624572754
+
+[ITER 30000] Saving Gaussians
+
+[ITER 30000] Saving Checkpoint
+Training progress:  62%|▌| 31000/50001 [29:41<30:50, 10.27it/s, Loss=0.01192, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00052, MW=0.00000, RW=0.00000, Points=97113, Ref=93.5611, PSNR-train=29.9863, PSNR-test=26.51
+[COMPARE][A3][ITER 31000] avg_iter_ms=94.27 | points=97113 | delta_points=+0 | psnr_train=29.9863 | psnr_test=26.5169 | loss=0.01192 | geo=0.00000 | pho=0.00000 | bc=0.00052 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  64%|▋| 32000/50001 [31:19<34:42,  8.64it/s, Loss=0.01064, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00051, MW=0.00000, RW=0.00000, Points=97113, Ref=93.4128, PSNR-train=30.4518, PSNR-test=26.51
+[COMPARE][A3][ITER 32000] avg_iter_ms=94.52 | points=97113 | delta_points=+0 | psnr_train=30.4518 | psnr_test=26.5169 | loss=0.01064 | geo=0.00000 | pho=0.00000 | bc=0.00051 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+reconstruct radiance fields: 96it [00:00, 112.57it/s]
+The estimated bounding radius is 3.00:00, 111.85it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 22.22it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=911
+num vertices raw 173319
+num vertices post 168088
+[ITER 32000] Mesh exported to /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot_A3/teapot/test_032000.ply
+valid untile here
+325964 325964
+Finish Building FaceIds Mapping
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 56.84it/s]
+ 94%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████            | 30/32 [00:00<00:00, 56.84it/s]
+[ITER 32500] Evaluating test: L1 0.011192270234460011 PSNR 26.608668208122253
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 58.02it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 32500] Evaluating train: L1 0.007692286185920239 PSNR 29.227517700195314
+Training progress:  66%|▋| 33000/50001 [33:03<29:10,  9.71it/s, Loss=0.01098, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00038, MW=0.00000, RW=0.00000, Points=97113, Ref=93.2491, PSNR-train=29.8932, PSNR-test=26.60
+[COMPARE][A3][ITER 33000] avg_iter_ms=94.64 | points=97113 | delta_points=+0 | psnr_train=29.8932 | psnr_test=26.6087 | loss=0.01098 | geo=0.00000 | pho=0.00000 | bc=0.00038 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  68%|▋| 34000/50001 [34:41<30:38,  8.70it/s, Loss=0.01204, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00044, MW=0.00000, RW=0.00000, Points=97113, Ref=93.1224, PSNR-train=29.5386, PSNR-test=26.60
+[COMPARE][A3][ITER 34000] avg_iter_ms=94.73 | points=97113 | delta_points=+0 | psnr_train=29.5386 | psnr_test=26.6087 | loss=0.01204 | geo=0.00000 | pho=0.00000 | bc=0.00044 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  70%|▋| 35000/50001 [36:19<28:51,  8.66it/s, Loss=0.01127, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00061, MW=0.00000, RW=0.00000, Points=97113, Ref=92.9546, PSNR-train=29.9753, PSNR-test=26.64
+[COMPARE][A3][ITER 35000] avg_iter_ms=94.68 | points=97113 | delta_points=+0 | psnr_train=29.9753 | psnr_test=26.6474 | loss=0.01127 | geo=0.00000 | pho=0.00000 | bc=0.00061 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 55.42it/s]
+ 94%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████            | 30/32 [00:00<00:00, 55.88it/s]
+[ITER 35000] Evaluating test: L1 0.011192858888534829 PSNR 26.647426187992096
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 55.87it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 35000] Evaluating train: L1 0.007464930228888989 PSNR 29.542888259887697
+Training progress:  70%|▋| 35150/50001 [36:34<24:01, 10.30it/s, Loss=0.01129, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00055, MW=0.00000, RW=0.00000, Points=97113, Ref=92.9299, PSNR-train=29.7553, PSNR-test=26.64
+Training progress:  72%|▋| 36000/50001 [37:56<27:05,  8.61it/s, Loss=0.01254, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00041, MW=0.00000, RW=0.00000, Points=97113, Ref=92.7837, PSNR-train=29.4037, PSNR-test=26.64
+[COMPARE][A3][ITER 36000] avg_iter_ms=92.89 | points=97113 | delta_points=+0 | psnr_train=29.4037 | psnr_test=26.6474 | loss=0.01254 | geo=0.00000 | pho=0.00000 | bc=0.00041 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  74%|▋| 37000/50001 [39:31<20:41, 10.47it/s, Loss=0.01067, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00050, MW=0.00000, RW=0.00000, Points=97113, Ref=92.6529, PSNR-train=30.2037, PSNR-test=26.64
+[COMPARE][A3][ITER 37000] avg_iter_ms=92.44 | points=97113 | delta_points=+0 | psnr_train=30.2037 | psnr_test=26.6474 | loss=0.01067 | geo=0.00000 | pho=0.00000 | bc=0.00050 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 55.89it/s]
+ 94%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋           | 30/32 [00:00<00:00, 56.70it/s]
+[ITER 37500] Evaluating test: L1 0.011109825107268989 PSNR 26.69300276041031
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 59.34it/s]
+  0%|                                                                                                                                                                                                | 0/5 [00:00<?, ?it/s]
+[ITER 37500] Evaluating train: L1 0.007160443160682917 PSNR 29.818199539184572
+Training progress:  76%|▊| 38000/50001 [41:07<22:19,  8.96it/s, Loss=0.01162, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00049, MW=0.00000, RW=0.00000, Points=97113, Ref=92.5303, PSNR-train=30.0161, PSNR-test=26.69
+[COMPARE][A3][ITER 38000] avg_iter_ms=92.38 | points=97113 | delta_points=+0 | psnr_train=30.0161 | psnr_test=26.6930 | loss=0.01162 | geo=0.00000 | pho=0.00000 | bc=0.00049 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  78%|▊| 39000/50001 [42:42<18:13, 10.06it/s, Loss=0.01099, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00058, MW=0.00000, RW=0.00000, Points=97113, Ref=92.3769, PSNR-train=29.8939, PSNR-test=26.69
+[COMPARE][A3][ITER 39000] avg_iter_ms=92.42 | points=97113 | delta_points=+0 | psnr_train=29.8939 | psnr_test=26.6930 | loss=0.01099 | geo=0.00000 | pho=0.00000 | bc=0.00058 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  80%|▊| 40000/50001 [44:19<21:35,  7.72it/s, Loss=0.01124, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00057, MW=0.00000, RW=0.00000, Points=97113, Ref=92.2369, PSNR-train=30.0531, PSNR-test=26.68
+[COMPARE][A3][ITER 40000] avg_iter_ms=92.77 | points=97113 | delta_points=+0 | psnr_train=30.0531 | psnr_test=26.6899 | loss=0.01124 | geo=0.00000 | pho=0.00000 | bc=0.00057 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 56.86it/s]
+ 94%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋           | 30/32 [00:00<00:00, 57.79it/s]
+[ITER 40000] Evaluating test: L1 0.011083279066951945 PSNR 26.689906656742096
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 58.30it/s]
+  0%|                                                                                                                                                                                                | 0/5 [00:00<?, ?it/s]
+[ITER 40000] Evaluating train: L1 0.0072780105285346515 PSNR 29.715425872802737
+
+[ITER 40000] Saving Gaussians
+reconstruct radiance fields: 96it [00:00, 113.23it/s]
+The estimated bounding radius is 3.00:00, 112.68it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 21.75it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=893
+num vertices raw 173549
+num vertices post 168458
+[ITER 40000] Mesh exported to /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot_A3/teapot/test_040000.ply
+valid untile here
+326463 326463
+Finish Building FaceIds Mapping
+
+[ITER 40000] Saving Checkpoint
+Training progress:  82%|▊| 41000/50001 [46:02<14:19, 10.47it/s, Loss=0.01137, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00058, MW=0.00000, RW=0.00000, Points=97113, Ref=92.1205, PSNR-train=29.9442, PSNR-test=26.68
+[COMPARE][A3][ITER 41000] avg_iter_ms=92.63 | points=97113 | delta_points=+0 | psnr_train=29.9442 | psnr_test=26.6899 | loss=0.01137 | geo=0.00000 | pho=0.00000 | bc=0.00058 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  84%|▊| 42000/50001 [47:37<15:26,  8.64it/s, Loss=0.01118, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00045, MW=0.00000, RW=0.00000, Points=97113, Ref=92.0083, PSNR-train=29.7361, PSNR-test=26.68
+[COMPARE][A3][ITER 42000] avg_iter_ms=92.52 | points=97113 | delta_points=+0 | psnr_train=29.7361 | psnr_test=26.6899 | loss=0.01118 | geo=0.00000 | pho=0.00000 | bc=0.00045 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 56.79it/s]
+ 94%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋           | 30/32 [00:00<00:00, 57.26it/s]
+[ITER 42500] Evaluating test: L1 0.011077112154453062 PSNR 26.699462056159973
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 57.10it/s]
+  0%|                                                                                                                                                                                                | 0/5 [00:00<?, ?it/s]
+[ITER 42500] Evaluating train: L1 0.007156030274927616 PSNR 29.82688331604004
+Training progress:  86%|▊| 43000/50001 [49:14<11:09, 10.46it/s, Loss=0.01156, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00043, MW=0.00000, RW=0.00000, Points=97113, Ref=91.8888, PSNR-train=29.7773, PSNR-test=26.69
+[COMPARE][A3][ITER 43000] avg_iter_ms=92.63 | points=97113 | delta_points=+0 | psnr_train=29.7773 | psnr_test=26.6995 | loss=0.01156 | geo=0.00000 | pho=0.00000 | bc=0.00043 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  88%|▉| 44000/50001 [50:50<11:13,  8.91it/s, Loss=0.01112, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00046, MW=0.00000, RW=0.00000, Points=97113, Ref=91.7766, PSNR-train=30.1747, PSNR-test=26.69
+[COMPARE][A3][ITER 44000] avg_iter_ms=92.95 | points=97113 | delta_points=+0 | psnr_train=30.1747 | psnr_test=26.6995 | loss=0.01112 | geo=0.00000 | pho=0.00000 | bc=0.00046 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  90%|▉| 45000/50001 [52:26<09:49,  8.48it/s, Loss=0.01141, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00053, MW=0.00000, RW=0.00000, Points=97113, Ref=91.6499, PSNR-train=29.8991, PSNR-test=26.74
+[COMPARE][A3][ITER 45000] avg_iter_ms=93.05 | points=97113 | delta_points=+0 | psnr_train=29.8991 | psnr_test=26.7440 | loss=0.01141 | geo=0.00000 | pho=0.00000 | bc=0.00053 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 49.73it/s]
+ 91%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                 | 29/32 [00:00<00:00, 50.54it/s]
+[ITER 45000] Evaluating test: L1 0.010992173731210642 PSNR 26.74404937028885
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 52.91it/s]
+  0%|                                                                                                                                                                                                | 0/5 [00:00<?, ?it/s]
+[ITER 45000] Evaluating train: L1 0.007182978186756373 PSNR 29.829196548461915
+Training progress:  92%|▉| 46000/50001 [54:06<07:46,  8.57it/s, Loss=0.01120, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00053, MW=0.00000, RW=0.00000, Points=97113, Ref=91.5295, PSNR-train=30.2028, PSNR-test=26.74
+[COMPARE][A3][ITER 46000] avg_iter_ms=95.69 | points=97113 | delta_points=+0 | psnr_train=30.2028 | psnr_test=26.7440 | loss=0.01120 | geo=0.00000 | pho=0.00000 | bc=0.00053 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress:  94%|▉| 47000/50001 [55:44<04:54, 10.19it/s, Loss=0.01146, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00053, MW=0.00000, RW=0.00000, Points=97113, Ref=91.4224, PSNR-train=29.8929, PSNR-test=26.74
+[COMPARE][A3][ITER 47000] avg_iter_ms=95.60 | points=97113 | delta_points=+0 | psnr_train=29.8929 | psnr_test=26.7440 | loss=0.01146 | geo=0.00000 | pho=0.00000 | bc=0.00053 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 54.37it/s]
+ 94%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████            | 30/32 [00:00<00:00, 54.52it/s]
+[ITER 47500] Evaluating test: L1 0.011099679497419856 PSNR 26.697444260120392
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 54.80it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 47500] Evaluating train: L1 0.007035158108919859 PSNR 29.99225311279297
+Training progress:  96%|▉| 48000/50001 [57:24<04:00,  8.32it/s, Loss=0.01091, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00064, MW=0.00000, RW=0.00000, Points=97113, Ref=91.3132, PSNR-train=30.1010, PSNR-test=26.69
+[COMPARE][A3][ITER 48000] avg_iter_ms=95.80 | points=97113 | delta_points=+0 | psnr_train=30.1010 | psnr_test=26.6974 | loss=0.01091 | geo=0.00000 | pho=0.00000 | bc=0.00064 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+reconstruct radiance fields: 96it [00:00, 110.70it/s]
+The estimated bounding radius is 3.00:00, 110.14it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:05, 18.91it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=959
+num vertices raw 173930
+num vertices post 168554
+[ITER 48000] Mesh exported to /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot_A3/teapot/test_048000.ply
+valid untile here
+326959 326959
+Finish Building FaceIds Mapping
+Training progress:  98%|▉| 49000/50001 [59:09<01:39, 10.10it/s, Loss=0.01105, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00051, MW=0.00000, RW=0.00000, Points=97113, Ref=91.2154, PSNR-train=30.0979, PSNR-test=26.69
+[COMPARE][A3][ITER 49000] avg_iter_ms=95.92 | points=97113 | delta_points=+0 | psnr_train=30.0979 | psnr_test=26.6974 | loss=0.01105 | geo=0.00000 | pho=0.00000 | bc=0.00051 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+Training progress: 100%|▉| 50000/50001 [1:00:49<00:00,  7.49it/s, Loss=0.01144, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00048, MW=0.00000, RW=0.00000, Points=97113, Ref=91.1093, PSNR-train=29.7238, PSNR-test=26.
+[COMPARE][A3][ITER 50000] avg_iter_ms=95.68 | points=97113 | delta_points=+0 | psnr_train=29.7238 | psnr_test=26.7231 | loss=0.01144 | geo=0.00000 | pho=0.00000 | bc=0.00048 | mw=0.00000 | rw=0.00000 | warp_calls=250 | warp_skips=750 | densify_calls=0 | prune_only_calls=0 | densify_interval=500 | densify_grad=0.000200
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 55.51it/s]
+ 94%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████            | 30/32 [00:00<00:00, 55.42it/s]
+[ITER 50000] Evaluating test: L1 0.011067825689679012 PSNR 26.723142564296722
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 53.40it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 50000] Evaluating train: L1 0.007160271424800158 PSNR 29.87742729187012
+
+[ITER 50000] Saving Gaussians
+reconstruct radiance fields: 96it [00:00, 112.51it/s]
+The estimated bounding radius is 3.00:00, 112.71it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 23.17it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=905
+num vertices raw 173551
+num vertices post 168544
+[ITER 50000] Mesh exported to /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot_A3/teapot/test_050000.ply
+valid untile here
+326892 326892
+Finish Building FaceIds Mapping
+
+[ITER 50000] Saving Checkpoint
+Training progress: 100%|▉| 50000/50001 [1:00:56<00:00, 13.67it/s, Loss=0.01144, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00048, MW=0.00000, RW=0.00000, Points=97113, Ref=91.1093, PSNR-train=29.7238, PSNR-test=26.
+
+Training complete.
+
+
+
+
+
+
+
+(MaterialRefGS) shiqingaoxue@shiqingaoxue-MS-7E34:~/文档/3DGS/MaterialRefGS$ python eval_1.py --white_background --save_images   --model_path /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot_A3/teapot
+Looking for config file in /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot_A3/teapot/cfg_args
+Config file found: /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot_A3/teapot/cfg_args
+Rendering /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot_A3/teapot
+Loading trained model at iteration 50000
+/home/shiqingaoxue/文档/3DGS/MaterialRefGS/datasets/GlossySynthetic/teapot
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+computing nearest_id
+Using /home/shiqingaoxue/.cache/torch_extensions/py310_cu117 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/shiqingaoxue/.cache/torch_extensions/py310_cu117/renderutils_plugin/build.ninja...
+Building extension module renderutils_plugin...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module renderutils_plugin...
+torch.Size([21873, 3])
+torch.Size([97113, 3])
+valid untile here
+326892 326892
+Finish Building FaceIds Mapping
+Rendering progress: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 96/96 [00:34<00:00,  2.77it/s]
+Rendering progress: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:35<00:00,  1.12s/it]
+psnr:26.72180414199829, ssim:0.9503312762826681, lpips:0.05329954903572798, fps:53.80680056990793

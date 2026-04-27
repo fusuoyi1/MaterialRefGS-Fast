@@ -126,10 +126,10 @@ def render_sets(dataset: ModelParams, iteration: int, pipeline: PipelineParams, 
 
         if indirect:
             op.indirect = 1
-            gaussians.load_mesh_from_ply(dataset.model_path, iteration)
+            gaussians.load_mesh_from_ply(dataset.model_path, eval_iteration)
 
         
-        render_set_train(dataset.model_path, scene.getTrainCameras(), gaussians, pipeline, background, save_ims, op,render,iteration)
+        render_set_train(dataset.model_path, scene.getTrainCameras(), gaussians, pipeline, background, save_ims, op,render,eval_iteration)
         render_set(dataset.model_path, scene.getTestCameras(), gaussians, pipeline, background, save_ims, op, render)
         
         env_dict = gaussians.render_env_map()

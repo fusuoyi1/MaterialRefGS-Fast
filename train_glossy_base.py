@@ -59,7 +59,7 @@ def load_by_method(method="GeoWizard",scan_id=None, args=None):
         glob_regx = "*_pred_colored.png"
         posix = "_pred_colored.png"
     elif method == "Metric3D":
-        prior_rt = f"{args.metric3d_path}/{scan_id}/normal"      #normal或者stable-normal
+        prior_rt = f"{args.metric3d_path}/{scan_id}/normal"
         glob_regx = "*.png"
         posix = ".png"
     elif method == "IDArb":
@@ -91,7 +91,7 @@ def load_normal_prior(dataset, scan_id:str, r=1, method="GeoWizard", args=None):
         normal = cv2.resize(normal,(w2,h2)).reshape(-1,3)
         normal = (normal/255.)*2. - 1
         # normal[:,1:] *= -1
-        # normal *= -1                  如果是stable-normal这行不#
+        # normal *= -1
         img_name = os.path.basename(npath).replace(posix,"")
         normal_images.update({
             img_name: torch.from_numpy(normal).float()
