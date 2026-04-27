@@ -1,0 +1,457 @@
+(MaterialRefGS) shiqingaoxue@shiqingaoxue-MS-7E34:~/文档/3DGS/MaterialRefGS$ bash ./run_glossy_base.sh
+bash: /home/shiqingaoxue/anaconda3/envs/MaterialRefGS/lib/libtinfo.so.6: no version information available (required by bash)
+running on gpu 0
+Optimizing /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot
+Output folder: /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot
+Visualization folder: /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot/visualize
+Tensorboard not available: not logging progress
+/home/shiqingaoxue/文档/3DGS/MaterialRefGS/datasets/GlossySynthetic/teapot
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+computing nearest_id
+Number of points at initialisation :  100000
+Using /home/shiqingaoxue/.cache/torch_extensions/py310_cu117 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/shiqingaoxue/.cache/torch_extensions/py310_cu117/renderutils_plugin/build.ninja...
+Building extension module renderutils_plugin...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module renderutils_plugin...
+Training progress:   0%|                                                                                                                                                                         | 0/50001 [00:00<?, ?it/s]Propagation until: 30000
+Densify until: 30000
+Total iterations: 50001
+Loading Normal Maps...
+Loading Mask Maps...
+/home/shiqingaoxue/文档/3DGS/MaterialRefGS/datasets/GlossySynthetic/teapot/rgb
+Finised Loading Prior Maps!!!
+Training progress:   6%| | 3000/50001 [01:00<1:02:50, 12.47it/s, Loss=0.04533, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=50656, Ref=0.0000, PSNR-train=20.0592, PSNR-test=19.95/home/shiqingaoxue/anaconda3/envs/MaterialRefGS/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 189.22it/s]
+ 59%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                         | 19/32 [00:00<00:00, 188.02it/s]
+[ITER 7000] Evaluating test: L1 0.014264019700931385 PSNR 25.033064246177673
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 187.90it/s]
+  0%|                                                                                                                                                                                                | 0/5 [00:00<?, ?it/s]
+[ITER 7000] Evaluating train: L1 0.012443643435835839 PSNR 25.859307098388673
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 179.41it/s]
+ 56%|█████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                               | 18/32 [00:00<00:00, 178.57it/s]
+[ITER 10000] Evaluating test: L1 0.012290579063119367 PSNR 25.939188420772552
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 187.58it/s]
+  0%|                                                                                                                                                                                                | 0/5 [00:00<?, ?it/s]
+[ITER 10000] Evaluating train: L1 0.010121632181107999 PSNR 27.103438949584962
+
+[ITER 10000] Saving Gaussians
+
+[ITER 10000] Saving Checkpoint
+Training progress:  24%|▏| 12000/50001 [06:29<1:06:06,  9.58it/s, Loss=0.01617, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=81492, Ref=94.7590, PSNR-train=27.6066, PSNR-test=26.
+[ITER 12000] Saving Checkpoint
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 180.43it/s]
+ 56%|█████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                               | 18/32 [00:00<00:00, 178.47it/s]
+[ITER 12500] Evaluating test: L1 0.011993900319794193 PSNR 26.09482318162918
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 174.45it/s]
+  0%|                                                                                                                                                                                                | 0/5 [00:00<?, ?it/s]
+[ITER 12500] Evaluating train: L1 0.009517655521631242 PSNR 27.450890350341798
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 180.39it/s]
+ 59%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                         | 19/32 [00:00<00:00, 180.24it/s]
+[ITER 15000] Evaluating test: L1 0.011993781459750608 PSNR 26.073935985565186
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 184.03it/s]
+  0%|                                                                                                                                                                                                | 0/5 [00:00<?, ?it/s]
+[ITER 15000] Evaluating train: L1 0.009240124374628067 PSNR 27.739311981201173
+
+[ITER 15000] Saving Gaussians
+
+[ITER 15000] Saving Checkpoint
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 171.50it/s]
+ 53%|████████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                    | 17/32 [00:00<00:00, 163.86it/s]
+[ITER 17500] Evaluating test: L1 0.012259808514500037 PSNR 25.92666471004486
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 186.74it/s]
+  0%|                                                                                                                                                                                                | 0/5 [00:00<?, ?it/s]
+[ITER 17500] Evaluating train: L1 0.009108968079090118 PSNR 27.845969390869143
+Training progress:  40%|▍| 19990/50001 [11:49<18:46, 26.65it/s, Loss=0.01522, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=95248, Ref=94.2791, PSNR-train=27.8545, PSNR-test=26.20Env Gaussian Initialization...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 181.38it/s]
+ 59%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                         | 19/32 [00:00<00:00, 183.48it/s]
+[ITER 20000] Evaluating test: L1 0.012012605468044057 PSNR 26.071849465370178
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 192.43it/s]
+  0%|                                                                                                                                                                                                | 0/5 [00:00<?, ?it/s]
+[ITER 20000] Evaluating train: L1 0.00872373217716813 PSNR 28.142777252197266
+
+[ITER 20000] Saving Gaussians
+reconstruct radiance fields: 96it [00:01, 68.01it/s]
+The estimated bounding radius is 3.00:01, 66.21it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:01, 76.31it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=979
+num vertices raw 180799
+num vertices post 174308
+valid untile here
+338415 338415
+Finish Building FaceIds Mapping
+
+[ITER 20000] Saving Checkpoint
+reconstruct radiance fields: 96it [00:00, 118.56it/s],  5.63it/s, Loss=0.01339, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00000, MW=0.00000, RW=0.00000, Points=86201, Ref=94.4281, PSNR-train=28.5544, PSNR-test=26.
+The estimated bounding radius is 3.00:00, 118.91it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 19.47it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=999
+num vertices raw 183535
+num vertices post 177746
+valid untile here
+344923 344923
+Finish Building FaceIds Mapping
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 38.39it/s]
+ 91%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                 | 29/32 [00:00<00:00, 38.51it/s]
+[ITER 22500] Evaluating test: L1 0.011716270819306374 PSNR 26.32327377796173
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 45.04it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 45.17it/s]
+[ITER 22500] Evaluating train: L1 0.008464714512228966 PSNR 28.475199127197268
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 53.25it/s]
+ 94%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋           | 30/32 [00:00<00:00, 53.20it/s]
+[ITER 25000] Evaluating test: L1 0.0112096355878748 PSNR 26.652574837207794
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 53.00it/s]
+  0%|                                                                                                                                                                                                | 0/5 [00:00<?, ?it/s]
+[ITER 25000] Evaluating train: L1 0.008228335715830327 PSNR 28.748336410522462
+reconstruct radiance fields: 96it [00:01, 88.60it/s]0,  4.60it/s, Loss=0.01223, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00037, MW=0.00000, RW=0.00000, Points=92881, Ref=94.0601, PSNR-train=29.0820, PSNR-test=26.
+The estimated bounding radius is 3.00:00, 77.79it/s] 
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 20.79it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=1057
+num vertices raw 182407
+num vertices post 175796
+valid untile here
+341254 341254
+Finish Building FaceIds Mapping
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 58.26it/s]
+ 97%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎     | 31/32 [00:00<00:00, 58.56it/s]
+[ITER 27500] Evaluating test: L1 0.011368650506483391 PSNR 26.580849170684814
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 58.27it/s]
+  0%|                                                                                                                                                                                                | 0/5 [00:00<?, ?it/s]
+[ITER 27500] Evaluating train: L1 0.008555523119866848 PSNR 28.558221435546876
+reconstruct radiance fields: 96it [00:00, 115.78it/s],  4.88it/s, Loss=0.01416, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00040, MW=0.00000, RW=0.00000, Points=81782, Ref=94.5086, PSNR-train=28.5095, PSNR-test=26.
+The estimated bounding radius is 3.00:00, 116.06it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 21.44it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=1040
+num vertices raw 185779
+num vertices post 177642
+valid untile here
+344774 344774
+Finish Building FaceIds Mapping
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 59.96it/s]
+ 81%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                   | 26/32 [00:00<00:00, 59.74it/s]
+[ITER 30000] Evaluating test: L1 0.011488770309370011 PSNR 26.46823275089264
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 62.88it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 30000] Evaluating train: L1 0.008090159017592668 PSNR 28.976584243774415
+
+[ITER 30000] Saving Gaussians
+reconstruct radiance fields: 96it [00:00, 116.53it/s]
+The estimated bounding radius is 3.00:00, 115.70it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 22.82it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=820
+num vertices raw 173704
+num vertices post 169437
+valid untile here
+328860 328860
+Finish Building FaceIds Mapping
+
+[ITER 30000] Saving Checkpoint
+reconstruct radiance fields: 96it [00:00, 117.48it/s],  4.93it/s, Loss=0.01166, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00042, MW=0.00000, RW=0.00000, Points=96650, Ref=93.9400, PSNR-train=29.5025, PSNR-test=26.
+The estimated bounding radius is 3.00:00, 117.16it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 23.74it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=784
+num vertices raw 174072
+num vertices post 169917
+valid untile here
+329687 329687
+Finish Building FaceIds Mapping
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 61.26it/s]
+ 88%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                       | 28/32 [00:00<00:00, 61.35it/s]
+[ITER 32500] Evaluating test: L1 0.011190242832526565 PSNR 26.613339960575104
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 60.62it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 32500] Evaluating train: L1 0.007772744912654162 PSNR 29.205970001220706
+reconstruct radiance fields: 96it [00:00, 116.92it/s] 4.89it/s, Loss=0.01192, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00044, MW=0.00000, RW=0.00000, Points=96650, Ref=93.6813, PSNR-train=29.5609, PSNR-test=26.58
+The estimated bounding radius is 3.00:00, 116.90it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 22.62it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=771
+num vertices raw 174166
+num vertices post 170260
+valid untile here
+330155 330155
+Finish Building FaceIds Mapping
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 59.91it/s]
+ 81%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                   | 26/32 [00:00<00:00, 60.33it/s]
+[ITER 35000] Evaluating test: L1 0.011187243857420981 PSNR 26.62254810333252
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 62.11it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 35000] Evaluating train: L1 0.0076511653140187265 PSNR 29.35411758422852
+reconstruct radiance fields: 96it [00:00, 115.24it/s] 4.79it/s, Loss=0.01189, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00038, MW=0.00000, RW=0.00000, Points=96650, Ref=93.4102, PSNR-train=29.2747, PSNR-test=26.59
+The estimated bounding radius is 3.00:00, 114.12it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 23.60it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=809
+num vertices raw 173974
+num vertices post 169648
+valid untile here
+328960 328960
+Finish Building FaceIds Mapping
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 60.91it/s]
+ 84%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                             | 27/32 [00:00<00:00, 61.23it/s]
+[ITER 37500] Evaluating test: L1 0.01106766882003285 PSNR 26.69520103931427
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 62.07it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 37500] Evaluating train: L1 0.007332268636673689 PSNR 29.615049362182617
+reconstruct radiance fields: 96it [00:00, 111.02it/s] 4.78it/s, Loss=0.01315, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00049, MW=0.00000, RW=0.00000, Points=96650, Ref=93.1299, PSNR-train=29.0895, PSNR-test=26.64
+The estimated bounding radius is 3.00:00, 109.96it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 21.97it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=791
+num vertices raw 173892
+num vertices post 169834
+valid untile here
+329205 329205
+Finish Building FaceIds Mapping
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 60.08it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 60.54it/s]
+[ITER 40000] Evaluating test: L1 0.011124045558972284 PSNR 26.65654730796814
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 61.40it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 40000] Evaluating train: L1 0.007126299384981394 PSNR 29.782333374023438
+
+[ITER 40000] Saving Gaussians
+reconstruct radiance fields: 96it [00:00, 114.23it/s]
+The estimated bounding radius is 3.00:00, 113.96it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 23.07it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=759
+num vertices raw 173750
+num vertices post 169752
+valid untile here
+329115 329115
+Finish Building FaceIds Mapping
+
+[ITER 40000] Saving Checkpoint
+reconstruct radiance fields: 96it [00:00, 116.57it/s] 4.77it/s, Loss=0.01115, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00045, MW=0.00000, RW=0.00000, Points=96650, Ref=92.5949, PSNR-train=29.7672, PSNR-test=26.68
+The estimated bounding radius is 3.00:00, 116.96it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 23.56it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=734
+num vertices raw 173874
+num vertices post 169997
+valid untile here
+329349 329349
+Finish Building FaceIds Mapping
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 60.37it/s]
+ 84%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                             | 27/32 [00:00<00:00, 60.25it/s]
+[ITER 42500] Evaluating test: L1 0.011111204003100283 PSNR 26.67520546913147
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 62.22it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 42500] Evaluating train: L1 0.007079461123794317 PSNR 29.852852630615235
+reconstruct radiance fields: 96it [00:00, 114.17it/s],  4.88it/s, Loss=0.01204, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00040, MW=0.00000, RW=0.00000, Points=96650, Ref=92.3363, PSNR-train=29.5321, PSNR-test=26.
+The estimated bounding radius is 3.00:00, 114.51it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 22.77it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=759
+num vertices raw 174418
+num vertices post 170170
+valid untile here
+329717 329717
+Finish Building FaceIds Mapping
+Training progress:  88%|▉| 44250/50001 [1:03:50<12:35,  7.62it/s, Loss=0.01152, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00043, MW=0.00000, RW=0.00000, Points=96650, Ref=92.3270, PSNR-train=29.6972, PSNR-test=26.
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 60.43it/s]
+ 81%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                  | 26/32 [00:00<00:00, 60.29it/s]
+[ITER 45000] Evaluating test: L1 0.01107306606718339 PSNR 26.697023451328278
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 60.17it/s]
+  0%|                                                                                                                                                                                                | 0/5 [00:00<?, ?it/s]
+[ITER 45000] Evaluating train: L1 0.00723152793943882 PSNR 29.745062637329102
+reconstruct radiance fields: 96it [00:00, 114.04it/s],  4.82it/s, Loss=0.01087, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00038, MW=0.00000, RW=0.00000, Points=96650, Ref=92.1366, PSNR-train=30.0869, PSNR-test=26.
+The estimated bounding radius is 3.00:00, 114.54it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 22.03it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=723
+num vertices raw 173922
+num vertices post 170141
+valid untile here
+329681 329681
+Finish Building FaceIds Mapping
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 59.49it/s]
+ 84%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                             | 27/32 [00:00<00:00, 59.54it/s]
+[ITER 47500] Evaluating test: L1 0.011117095418740064 PSNR 26.70341831445694
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 59.52it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 47500] Evaluating train: L1 0.006978671997785568 PSNR 29.965272521972658
+reconstruct radiance fields: 96it [00:00, 114.49it/s],  4.76it/s, Loss=0.01086, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00041, MW=0.00000, RW=0.00000, Points=96650, Ref=91.9338, PSNR-train=29.8608, PSNR-test=26.
+The estimated bounding radius is 3.00:00, 113.89it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 23.43it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=717
+num vertices raw 173854
+num vertices post 170233
+valid untile here
+329697 329697
+Finish Building FaceIds Mapping
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:00<00:00, 60.12it/s]
+ 84%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                             | 27/32 [00:00<00:00, 60.17it/s]
+[ITER 50000] Evaluating test: L1 0.011033350034267642 PSNR 26.731266140937805
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 59.23it/s]
+  0%|                                                                                                                                                                                                         | 0/5 [00:00<?, ?it/s]
+[ITER 50000] Evaluating train: L1 0.0069540517404675485 PSNR 30.02882537841797
+
+[ITER 50000] Saving Gaussians
+reconstruct radiance fields: 96it [00:00, 116.90it/s]
+The estimated bounding radius is 3.00:00, 116.49it/s]
+Use at least 6.00 for depth_trunc
+Running tsdf volume integration ...
+voxel_size: 0.005859374666388478
+sdf_trunc: 0.02929687333194239
+depth_truc: 5.999999658381801
+TSDF integration progress: 96it [00:04, 22.65it/s]
+post processing the mesh to have 1 clusterscluster_to_kep
+[Open3D DEBUG] [ClusterConnectedTriangles] Compute triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done computing triangle adjacency
+[Open3D DEBUG] [ClusterConnectedTriangles] Done clustering, #clusters=796
+num vertices raw 174038
+num vertices post 169942
+valid untile here
+329388 329388
+Finish Building FaceIds Mapping
+
+[ITER 50000] Saving Checkpoint
+Training progress: 100%|▉| 50000/50001 [1:17:04<00:00, 10.81it/s, Loss=0.01068, Distort=0.00000, Geo=0.00000, Pho=0.00000, BC=0.00043, MW=0.00000, RW=0.00000, Points=96650, Ref=91.6606, PSNR-train=30.4694, PSNR-test=26.
+
+Training complete.
+
+
+
+
+
+(MaterialRefGS) shiqingaoxue@shiqingaoxue-MS-7E34:~/文档/3DGS/MaterialRefGS$ python eval.py --white_background --save_images --model_path /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot
+Looking for config file in /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot/cfg_args
+Config file found: /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot/cfg_args
+Rendering /home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot
+Loading trained model at iteration 50000
+/home/shiqingaoxue/文档/3DGS/MaterialRefGS/datasets/GlossySynthetic/teapot
+Found transforms_train.json file, assuming Blender data set!
+Reading Training Transforms
+Reading Test Transforms
+Loading Training Cameras
+Loading Test Cameras
+computing nearest_id
+Using /home/shiqingaoxue/.cache/torch_extensions/py310_cu117 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/shiqingaoxue/.cache/torch_extensions/py310_cu117/renderutils_plugin/build.ninja...
+Building extension module renderutils_plugin...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module renderutils_plugin...
+torch.Size([21553, 3])
+torch.Size([96650, 3])
+valid untile here
+329388 329388
+Finish Building FaceIds Mapping
+Rendering progress: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 96/96 [00:35<00:00,  2.69it/s]
+Rendering progress: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [00:37<00:00,  1.18s/it]
+psnr:26.7315012216568, ssim:0.9509266838431358, lpips:0.053007249138318, fps:56.42688743397938
