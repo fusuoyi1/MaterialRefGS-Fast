@@ -26,9 +26,9 @@ if [ "$gpuid" -ge 0 ]; then
     metric3d_path=/home/shiqingaoxue/文档/3DGS/MaterialRefGS/datasets/GlossySynthetic
     
     # Output directory
-    output_dir=/home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot_A3
+    output_dir=/home/shiqingaoxue/文档/3DGS/MaterialRefGS/output_glossy/teapot_A4_warp
     
-    OMP_NUM_THREADS=4 python train_glossy_A3.py \
+    OMP_NUM_THREADS=4 python train_glossy_A4_warp.py \
         -s ${data_dir}/${scene} \
         -m ${output_dir}/${scene} \
         --quiet \
